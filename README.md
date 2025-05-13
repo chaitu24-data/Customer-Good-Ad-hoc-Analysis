@@ -1,6 +1,7 @@
 # Customer-Good-Ad-hoc-Analysis
 🗂️ Consumer Goods – Ad-hoc Insights Project
 📌 Objective:
+
 Analyzed sales data of Atliq Hardware using SQL to uncover key business trends, identify sales patterns, and recommend strategic actions based on performance across Fiscal Years 2020 and 2021.
 
 📊 Key Insights Summary
