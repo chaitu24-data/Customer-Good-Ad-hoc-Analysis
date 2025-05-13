@@ -1,0 +1,16 @@
+8. In which quarter of 2020, got the maximum total_sold_quantity? The finaloutput contains these fields sorted by the total_sold_quantity,
+Quarter
+total_sold_quantity
+------------------------------------------------------------------------------------------------------
+select
+	CASE 
+        WHEN month(date) IN (9, 10, 11) THEN 'Q1'
+        WHEN month(date) IN (12, 1, 2) THEN 'Q2'
+        WHEN month(date) IN (3, 4, 5) THEN 'Q3'
+        WHEN month(date) IN (6, 7, 8) THEN 'Q4'
+    END as Quarter,
+    sum(sold_quantity) as total_sold_quantity
+from fact_sales_monthly
+where fiscal_year = 2020
+group by Quarter
+order by total_sold_quantity desc
